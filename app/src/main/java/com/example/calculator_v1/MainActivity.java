@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    // Veriables of calculator
     EditText eFirstV, eSecondV;
     TextView ans;
     Button add , subtract , multiply, divide;
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //This is done for find the variables in XML file by their unique ID
         eFirstV = findViewById(R.id.eVal_1);
         eSecondV = findViewById(R.id.eVal_2);
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         multiply = findViewById(R.id.multi_button);
         divide = findViewById(R.id.div_button);
 
+        //Below blocks set for getting a result of the calculator app
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
